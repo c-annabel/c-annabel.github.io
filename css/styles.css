@@ -30,6 +30,11 @@
     text-align: left;
 }
 
+.language {
+    position: relative;
+    text-align: right;
+}
+
 .top-cloud {
     position: fixed;
     top:5%;
@@ -55,6 +60,7 @@
     margin: 0;
     padding: 0;
     display: inline;
+    /* width: 12%; */
 }
 
 h1 {
@@ -77,6 +83,7 @@ table {
     height: 100%;
 }
 
+
 td {
     display: table-cell;
     vertical-align: top;
@@ -86,8 +93,37 @@ td {
     padding-left:20px;
   }
 
+.tech {
+    text-align: left ;
+}
+
+.langue {
+    text-align: center;
+}
+
+.project_td {
+    vertical-align: auto;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.project_left {
+    vertical-align: auto;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    width: 40%;
+}
+
+  .category {
+    column-span: 2;
+  }
+
 .translater {
-    margin = 0;
+    margin: 0;
 }
 
 h3 {
@@ -100,7 +136,7 @@ h3.job {
     display: inline;
 }
 
-h4 {
+h4, h5 {
     margin: 15px;
     display: inline;
 }
@@ -130,8 +166,7 @@ h4 {
 .bottom-container {
     position: relative;
     background-color: #55153789;
-    padding: 30px 0 30px;
-    margin: 0;
+    padding: 30px 0 30px 0;
     /* width: 800px;
     height: 70px;
     background-color: #6c2759a8; */
@@ -145,7 +180,20 @@ h4 {
     margin-left: 500px; */
 }
 
-.button1 {
+.project-img {
+    padding-bottom: 20px;
+}
+
+.project-page {
+    text-align: center;
+}
+
+.list_links {
+    display: inline-block;
+    text-align: left;
+}
+
+.button1, .button2{
     /* border: 4px solid #a26092;
     background-color: #d8458f; */
     background: #d1649e;
@@ -164,10 +212,10 @@ h4 {
     border-radius: 10px;
     -webkit-border-radius: 15;
     -moz-border-radius: 15;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
-.button1:hover {
+.button1:hover, .button2:hover {
     /* background-color: #2e3b3f; */
     background: #979fa3;
     background-image: -webkit-linear-gradient(top, #979fa3, #2e3b3f);
@@ -178,7 +226,13 @@ h4 {
     text-decoration: none;
 }
 
+.button2 {
+       margin: 5px auto 15px auto;
+}
+
+
 .btn {
+    color: #f8f6f8;
     text-decoration: none;
 }
 
@@ -194,17 +248,18 @@ a:link {
   
 /* visited link */
 a:visited {
-color: rgb(192, 140, 49);
+/* color: rgb(192, 140, 49); */
+    color: #f8f6f8;
 }
 
 /* mouse over link */
 a:hover {
-color: hotpink;
+    color: hotpink;
 }
 
 /* selected link */
 a:active {
-color: #f8f6f8;
+    color: #f8f6f8;
 }
 
 .cdt {
