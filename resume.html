@@ -1,0 +1,130 @@
+<!-- 
+    Name: Annabel Cheng
+    File Name: resume.html
+    Date Created: March 01, 2025
+    Description: A detailed resume information about the content creator
+-->
+
+<!-- Resume Main Container -->
+<main class="resume-page">
+  <!-- Resume Container (Includes tabs and content) -->
+  <div class="resume-container">
+      <!-- Vertical Bookmarks (Tabs for navigation) -->
+      <div class="bookmarks">
+          <!-- Resume Info and Contact Details -->
+          <div class="resume-info">
+              <h1>ANNABEL CHENG</h1>
+              <p>
+                  <a href="mailto:chen1036@algonquinlive.com">chen1036@algonquinlive.com</a><br>
+                  <!-- External links to GitHub and Portfolio -->
+                  <a href="https://github.com/c-annabel" target="_blank">GitHub</a> | 
+                  <a href="https://c-annabel.github.io/" target="_blank">Portfolio</a>
+              </p>
+          
+              <!-- Navigation Tabs for Resume Sections -->
+              <!-- Wrap the navigation buttons -->
+              <div class="resume-tabs">
+                  <button class="tab-btn active" data-tab="objective">Objective</button>
+                  <button class="tab-btn" data-tab="work">Work Experience</button>
+                  <button class="tab-btn" data-tab="skills">Skills</button>
+                  <button class="tab-btn" data-tab="education">Education</button>
+
+                  <!-- Uncomment the following tabs if required -->
+                  <!-- <button class="tab-btn" data-tab="volunteer">Volunteer Experience</button> -->
+                  <!-- <button class="tab-btn" data-tab="references">References</button> -->
+              </div>
+          </div>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div class="tab-content-container">
+          <!-- Objective Section -->
+          <div id="objective" class="tab-content active">
+              <h2>OBJECTIVE</h2>
+              <p>
+                  Aspiring software developer and computer programming student with a strong foundation 
+                  in system engineering, seeking a September co-op opportunity. Eager to apply skills in 
+                  Java, Python, COBOL, and SQL to optimize systems, automate processes, and contribute to 
+                  impactful projects through collaboration and problem-solving.
+              </p>
+          </div>
+
+          <!-- Work Experience Section -->
+          <div id="work" class="tab-content">
+              <h2>WORK EXPERIENCE</h2>
+              
+                  <h6><strong>System Engineer</strong></h6>
+                  Cathay Century Insurance Co., Taipei, Taiwan (March 2004 - March 2009)<br>
+                  <ul>
+                      <li>Revamped sales system, boosting revenue by 25% and increasing user productivity by 70%.</li>
+                      <li>Completed data migration project with zero disruptions, ensuring seamless system integration.</li>
+                      <li>Enhanced system reliability by fixing code deficiencies, reducing vulnerabilities by 50%.</li>
+                  </ul>
+              
+              
+                  <h6><strong>Cook (Part-time)</strong></h6>
+                  Aramark Canada, Ottawa, ON (September 2024 - Present)<br>
+                  <ul>
+                      <li>Led food preparation and event execution to meet strict deadlines.</li>
+                      <li>Produced an average of 1,500 donuts per shift, reaching peaks of 8,000 during major events.</li>
+                      <li>Ensured compliance with hygiene and safety standards, maintaining efficient kitchen operations.</li>
+                  </ul>
+              
+          </div>
+
+          <!-- Skills Section -->
+          <div id="skills" class="tab-content">
+              <h2>TECHNICAL SKILLS</h2>
+              <ul>
+                  <li>Software Development: Java, Python, COBOL, SQL, HTML, CSS, JavaScript</li>
+                  <li>Database Design: ER Diagrams, MySQL, MS Access, SQL Server</li>
+                  <li>System Administration: Windows, Linux</li>
+              </ul><br>
+              <h2>TRANSFERABLE SKILLS</h2>
+              <ul>
+                  <li>Collaboration: Produced clear documentation and worked with cross-functional teams.</li>
+                  <li>Leadership: Planned tasks, fostered team communication, and ensured timely completion of assignments.</li>
+                  <li>Adaptability: Managed multiple projects and coursework with consistent high performance.</li>
+              </ul>
+          </div>
+
+          <!-- Education Section -->
+          <div id="education" class="tab-content">
+              <h2>EDUCATION</h2>
+              
+                  <strong>Computer Programming (Co-Op) Diploma</strong><br>
+                  Algonquin College, Ottawa, ON, Canada - <em>September 2024 - Present</em><br>
+                  <ul>
+                      <li>Selected Coursework: OOP (Java), Data Structures & Algorithms, Database (SQL), Web Programming.</li>
+                  </ul>
+              
+              
+                  <strong>Bachelor of Commerce in Information Systems</strong><br>
+                  University of New South Wales, Sydney, Australia - <em>January 2000 - April 2003</em><br>
+              
+          </div>
+      </div>
+  </div>
+
+  <!-- JavaScript for Tab Functionality -->
+  <script>
+      // Wait for the DOM to load
+      document.addEventListener("DOMContentLoaded", function () {
+          const tabButtons = document.querySelectorAll(".tab-btn"); // Select all tab buttons
+          const tabContents = document.querySelectorAll(".tab-content"); // Select all tab contents
+
+          // Add click event to each tab button
+          tabButtons.forEach(button => {
+              button.addEventListener("click", () => {
+                  const target = button.getAttribute("data-tab"); // Get the target tab
+                  // Deactivate all buttons and contents
+                  tabButtons.forEach(btn => btn.classList.remove("active"));
+                  tabContents.forEach(content => content.classList.remove("active"));
+                  // Activate the clicked button and its associated content
+                  button.classList.add("active");
+                  document.getElementById(target).classList.add("active");
+              });
+          });
+      });
+  </script>
+</main>
