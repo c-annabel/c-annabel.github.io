@@ -1,232 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Portfolio of Annabel Cheng</title>
+    <!-- 
+      Name: Annabel Cheng
+      File Name: index.html
+      Date Created: March 01, 2025
+      Section: CST 8285 Section 321
+      Description: Assignment01: Portfolio landing page of the student Annabel Cheng.
+    -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="title" conent="C-ANNABEL Profile">
-    <meta name="description" content="This website contains information about a software engineer, including her skills, experiences, and projects completed over the years.">
-    <title>C-Annabel</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne&family=Montserrat">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="img/c-tiger_320*320.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Assignment01: Portfolio landing page of the student Annabel Cheng.">
+    <meta name="keywords" content="html, css, javascript, assignment 1, landing page, webpage, web development, stylesheet">
+    <meta name="author" content="Annabel Cheng">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Include EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Initialize EmailJS -->
+    <script>
+        (function() {
+            // Initialize EmailJS with your public key
+            emailjs.init('Oi8uhSVhm1cE32Unf');
+        })();
+    </script>
 </head>
-<body class="hero">
-    <!-- <div class="logo">
-        <img class="mainlogo" src="img/tigerverse_circle.png" alt="tigerverse_circle" width=11%>
-        <img class="top-cloud" src="mySiteImages/cloud.png" alt="cloud-img">
-    </div> -->
 
+<body>
+    <header>
+        <nav>
+            <!-- Navigation menu links -->
+            <div class="menu"><a href="#" onclick="reloadPage()">Home</a></div>
+            <div class="menu"><a href="resume.html" data-link="resume.html">Resume</a></div>
+            <div class="menu"><a href="projects.html" data-link="projects.html">Projects</a></div>
+            <div class="menu"><a href="contact.html" data-link="contact.html">Contact</a></div>
+        </nav>
+    </header>
 
-        <div class="language">
-            <br>
-            <h5><a class="btn" href="index.html">🇬🇧English</a></h5>
-            <!-- <h5><a class="btn" href="fr/index.html">🇫🇷Français</a></h5> -->
-            <h5>🇫🇷Français</h5>
-        </div>
-
-    <div class="top-container">
-        <img class="ac-img" src="img/annabel.JPG" alt="ac-img">
-        <h1>I'm Annabel</h1>
-        <p>a <span class="pro">software programmer.</span></p>
-        <br><br><br>
-    
-        <div class="profile-container">
-            <div class="profile">
-                <h2>Bonjour!</h2>
-                <p>With over seven years of experience in tech and fashion, I am a versatile professional with expertise in programming, engineering, compliance, and entrepreneurship. As founder of a thriving boutique and IT consulting firm, I excel in leading growth initiatives, customer service, and constructive feedback for diverse, collaborative teams. My unique skill set in technical expertise, strategic planning, and business acumen has been honed across multicultural industries. I have thrived in a rapidly evolving industry and am confident that my skills and experience will add significant value to any organization.</p>
+    <main id="main-content">
+        <div class="container" id="box">
+            <!-- Left section: Title and description -->
+            <div class="left">
+                <div class="titlename hover-2">
+                    <a href="resume.html" data-link="resume.html">ANNABEL CHENG</a>
+                </div>
+                <div class="subtitle">
+                    Aspiring Software Developer
+                </div>
+                <div class="subtitle2">
+                    <p>
+                        Crafting innovative solutions as a dedicated student at
+                        <a href="https://www.algonquincollege.com/sat/program/computer-programming/#overview" target="_blank">
+                            <strong>Algonquin College</strong>
+                        </a>, mastering the art of Software Engineering to shape the future.
+                    </p>
+                </div>
             </div>
-            <br><hr>
-        </div>
 
-        <div class="skill-container">
-            <br>
-            <h2>My Skills.</h2>
-            <table><tr>
-                <td>
-                    <div class="technical">
-                        <img class="tech-skill" src="mySiteImages/skills.png" alt="tech-skill">
-                        <h3>Technical Skills</h3>
-                        <ul class="tech">
-                            <li>Python, HTML, CSS, Javascript, Java, Cobol, MySQL</li>
-                            <li>Django, Pandas, JSON, Flask, Jinja, BeautifulSoup, Selenium</li>
-                            <li>IntelliJ, VS Code, PyCharm, AS/400</li>
-                            <li>Adobe Suite, MS Office Suite.</li>
-                        </ul>
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <img class="translater" src="mySiteImages/translater.png" alt="translater">
-                        <h3>Language</h3>
-                        <p>
-                            English (C1)<br>
-                            French (A2)<br>
-                            Mandarin (native)<br>
-                            Japanese (A2)<br>
-                        </p>
-                    </div>
-                </td>
-            </tr></table>
-            <hr>    
-        </div>
-
-        <div class="edu-container">
-            <br>
-            <h2>My Education.</h2>
-            <table><tr>
-                <td>
-                    <div class="diploma">
-                        <img class="book-stack" src="mySiteImages/book-stack.png" alt="book-stack">
-                        <h3>Diplomas</h3>
-                        <p>
-                            Master of Science in Computer Science with AI<br>
-                            University of York, UK, May 2022 - July 2024<br>
-                            <br>
-                            Bachelor of Arts in Fashion Design<br>
-                            IFA Paris, France, Sep 2017 - Sep 2020<br>
-                            <br>
-                            Bachelor of Commerce in Information Systems<br>
-                            UNSW, Australia, Jan 2000 - Dec 2002
-                        </p>
-                    </div>
-                </td>
-                <td>
-                    <div class="training">
-                        <img class="diploma" src="mySiteImages/diploma.png" alt="diploma">
-                        <h3>Trainings</h3>
-                        <p>
-                            <span class="course">The Complete Python Pro Bootcamp</span><br>
-                            Udemy |  Oct 2022 - May 2023<br>
-                            <br>
-                            <span class="course">Meta Back-End Developer Professional Certificate</span><br> 
-                            Coursera | Oct 2022 - May 2023<br>
-                            <br>
-                            <span class="course">The Complete COBOL Refresh Course</span><br>
-                            Udemy | Apr 2022
-                        </p>
-                    </div>
-                </td>
-            </tr></table>
-            <hr>    
-        </div>
-
-        <div class="project-container">
-            <br>
-            <h2>My projects.</h2>
-            <table><tr>
-                <td>
-                    <div class="project-des">
-                        <img class="project-img" src="mySiteImages/project.png" alt="project-img">
-                        <br>
-                        <button class="button2" type="button">
-                            <!--<a class="btn" href="project.html" style="color: #f8f6f8;">-->
-                                <strong>CHECK OUT MY PROJECTS<br>[under construction]</strong>
-                            <!--</a>-->
-                        </button>
-                    </div>
-                </td>
-            </tr></table>
-            <hr>    
-        </div>
-        
-        <div class="experience-container">
-            <br>
-            <h2>My Experience.</h2>
-            <br>
-            <div class="exp">
-                <p class="sub-title">【 Enterpreneurship 】</p>
-
-                <h3 class="job">Founder & Software Developer</h3>&emsp;<h4>Komfee Consulting</h4>&emsp;&emsp;📍Paris, France&emsp;&emsp;&emsp;<h5>01/2023 - Present</h5>
-                <ul>
-                    <li>IT services, including consulting, software/web design and development.</li>
-                    <li>Consultation service for art, crafts, and apparel products.</li>
-                    <li>E-commerce of digital goods, handmade objects, and diverse fashion items</li>
-                </ul>
-
-                <h3 class="job">Founder & Store Manager</h3>&emsp;<h4>Loïza Co.</h4>&emsp;&emsp;📍Paris, France&emsp;&emsp;&emsp;<h5>10/2019 - 06/2021</h5>
-                <ul>
-                    <li>Created, launched, and expanded a bridal boutique store in Paris in 2020. Carried out responsibilities and tasks as COO, CFO, CTO, and Product Manager.</li>
-                    <li>Built a Shopify-based e-commerce website for kids’ fashion and managed the whole product data setup on the in-store POS system. By the end of the sixth month, revenues and expenditures were in equilibrium.</li>
-                </ul>
-
-                <p class="sub-title">【 Enforcement 】</p>    
-
-                <h3 class="job">Compliance Manager</h3>&emsp;<h4>Allied Fashion Co.</h4>&emsp;&emsp;📍Shanghai, China&emsp;&emsp;&emsp;<h5>02/2013 - 01/2014</h5>
-                <ul>
-                    <li>Conducted initial CSR and C-TPAT audits on manufacturers: 6 out of eight factories passed third-party audits in the first year.</li>
-                    <li>Collaborated with cross-departmental teams to address QA concerns.</li>
-                    <li>The success rate of conducting product testing with the laboratories increased by 30% after examining the testing criteria and communicating with the manufacturers.</li>
-                </ul>
-  
-                <p class="sub-title">【 Engineering 】</p>
-
-                <h3 class="job">System Analyst</h3>&emsp;<h4>AIA Life Insurance Co.</h4>&emsp;&emsp;📍Taipei, Taiwan&emsp;&emsp;&emsp;<h5>10/2008 - 01/2009</h5>
-                <ul>
-                    <li>Performed tasks assigned by the management and completed on-the-job training.</li>
-                    <li>Resolved technical issues and handled all assigned tickets within specified response times. Conducted research on current technology to determine adaptability within the company's operations.</li>
-                </ul>
-
-                <h3 class="job">System Engineer</h3>&emsp;<h4>Prudential Life Insurance Co.</h4>&emsp;&emsp;📍Taipei, Taiwan&emsp;&emsp;&emsp;<h5>03/2007 - 06/2008</h5>
-                <ul>
-                    <li>Analyzed and resolved technical issues and facilitated the continuous enhancement of established development processes for the Reinsurance system on IBM AS/400.</li>
-                    <li>Deployed COBOL & MySQL to successfully migrate company data and applications from a high-risk legacy platform to a new company system without adversely impacting operations and clients.</li>
-                    <li>Maintained the Reinsurance system's data accuracy, security, and integrity. Debugged and resolved code-related issues and defects to safeguard the application's continued functionality and error-free operation.</li>
-                </ul>
-
-                <h3 class="job">System Programmer</h3>&emsp;<h4>Cathay Century Insurance Co.</h4>&emsp;&emsp;📍Taipei, Taiwan&emsp;&emsp;&emsp;<h5>03/2004 - 02/2007</h5>
-                <ul>
-                    <li>Awarded “Most Innovative Employee” for streamlining operations by implementing an automated settlement program. Designed a user-friendly interface on AS/400, allowing users to operate on one interface with the ability to specify time constraints manually.</li>
-                    <li>Utilized COBOL & MySQL to restructure the company sales system, reducing sales reporting generation time by 8 hours, eliminating manual errors, and increasing department productivity by 70%. Over two months, the initiative contributed to a 25% increase in company revenue.</li>
-                    <li>Overhauled company employee induction program by introducing revised SOPs, reducing training time by 50%.</li>
-                </ul>              
-            </div>      
-            <br><hr>  
-        </div>  
-
-        <div class="contact-me">
-            <br>
-            <h2>Get In Touch.</h2><br>
-            <h3>Inquiries & Collaboration Requests.</h3>
-            <p class="thanks">Thank you for your interest in my profile. By using the "CONTACT ME" button below, you will be able to send me an email. I will respond as quickly as possible. Once again, sincerely appreciate your visit, and I wish you a blooming day!  🌸</p>
-            <br><br>
-            <button class="button1" type="button">
-                <a class="btn" href="mailto:c-annabel@outlook.com"><strong>CONTACT ME</strong></a>
-            </button>
-        </div>
-    </div>
-    
-    <div class="bottom-container">
-        <div>
-            <a class="footer-link" href="https://www.linkedin.com/in/c-annabel/">LinkedIn</a>
-            &emsp;
-            <a class="footer-link" href="https://github.com/c-annabel">GitHub</a>
-            <!-- <span>&nbsp&nbsp</span> -->
-            <!-- <a class="footer-link" href="https://www.komfee.dev/"> Komfee Consulting(under construction) </a> -->
-            <br><br><br>
-
-            <div class="credits">
-                <p>Credits to: 
-                    <br>
-                    <a class="cdt" href="https://www.flaticon.com/free-icons/skills" title="skill icons">Skills icon by Freepik - Flaticon</a>
-                    <br>
-                    <a class="cdt" href="https://www.flaticon.com/free-icons/education" title="education icons">Diploma & Training icons by Freepik - Flaticon</a>
-                    <br>
-                    <a class="cdt" href="https://www.flaticon.com/free-icons/extensible-markup-language" title="extensible markup language icons"> Markup language icon by Vectorslab - Flaticon</a>
-                    <br>
-                    <a class="cdt" href="https://www.flaticon.com/free-icons/rocket" title="rocket icons">Rocket icons by Freepik - Flaticon</a>
-                    <br>
-                    <a class="cdt" href="https://www.flaticon.com/free-icons/volunteering" title="volunteering icons">Volunteering icon by Iconjam - Flaticon</a>
-
-                </p> 
+            <!-- Right section: Profile image -->
+            <div class="right">
+                <a href="resume.html" data-link="resume.html">
+                    <img src="images/RobotAnna.jpg" alt="Robot Anna">
+                </a>
             </div>
-            <img class="tinylogo" src="img/tigerverse_circle.png" alt="tigerverse_circle" width=10%>
-            <p class="copyright">© 2023 C-Annabel.</p>
         </div>
-    </div>
+    </main>
 
+    <footer id="bottom">
+        <div class="credits">
+            <!-- Credits section for background image -->
+            <p class="patent">Credits to:</p>
+            <p class="patent">
+                Background image by
+                <a href="https://pixabay.com/users/placidplace-25572496/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7273891">Peace, love, happiness</a>
+                from
+                <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7273891">Pixabay</a>
+            </p>
+        </div>
+        <p id="copyright">
+            &copy; <span id="current-year"></span> Annabel Cheng. All rights reserved.
+        </p>
+        <script>
+            // Dynamically update the current year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
 
-
+    <script>
+        // Wait until the DOM content is fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('[data-link]'); // Select all elements with 'data-link' attribute
+            const mainContent = document.getElementById('main-content'); // Main content container
+    
+            // Add click event listeners to all navigation links
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    const url = this.getAttribute('data-link'); // Fetch the URL from the 'data-link' attribute
+    
+                    // Fetch the content of the clicked link
+                    fetch(url)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.text(); // Parse the response as text
+                        })
+                        .then(data => {
+                            // Create a temporary container for fetched content
+                            const tempDiv = document.createElement('div');
+                            tempDiv.innerHTML = data;
+    
+                            // Extract <main> tag content if available, otherwise use full content
+                            const newContent = tempDiv.querySelector('main') || tempDiv;
+                            mainContent.innerHTML = newContent.innerHTML;
+    
+                            // Attach event listeners for the Projects page if navigation buttons are present
+                            const nextBtn = document.getElementById('nextBtn');
+                            const prevBtn = document.getElementById('prevBtn');
+                            if (nextBtn && prevBtn) {
+                                let currentProject = 0; // Track the current active project
+                                const projects = document.querySelectorAll('.project'); // All project items
+                                const totalProjects = projects.length; // Total number of projects
+    
+                                nextBtn.addEventListener('click', () => {
+                                    if (currentProject < totalProjects - 1) {
+                                        projects[currentProject].classList.remove('active'); // Deactivate current project
+                                        currentProject++; // Move to the next project
+                                        projects[currentProject].classList.add('active'); // Activate the new project
+                                    } else {
+                                        // End of the project list; display a message
+                                        const endMessage = document.getElementById('endMessage');
+                                        if (endMessage) {
+                                            endMessage.style.display = 'block';
+                                            endMessage.textContent = "The end of the projects!"; // Show end message
+                                            setTimeout(() => {
+                                                endMessage.style.display = 'none'; // Hide the message after 3 seconds
+                                            }, 3000);
+                                        }
+                                    }
+                                });
+    
+                                prevBtn.addEventListener('click', () => {
+                                    if (currentProject > 0) {
+                                        projects[currentProject].classList.remove('active'); // Deactivate current project
+                                        currentProject--; // Move to the previous project
+                                        projects[currentProject].classList.add('active'); // Activate the new project
+                                    }
+                                });
+                            }
+    
+                            // 1. Handle Contact Form Submission
+                            const contactForm = document.getElementById('contactForm');
+                            if (contactForm) {
+                                contactForm.addEventListener('submit', function (event) {
+                                    event.preventDefault(); // Prevent default form submission
+    
+                                    // Use EmailJS to send the form data
+                                    emailjs.sendForm("service_kyh5vnf", "template_vhvg3z9", this)
+                                        .then(
+                                            function () {
+                                                const responseDiv = document.getElementById('formResponse');
+                                                responseDiv.textContent = "Message has been sent, thank you for your message.";
+                                                responseDiv.style.color = "#e932b2"; // Style response
+                                                contactForm.reset(); // Reset the form fields
+                                            },
+                                            function (error) {
+                                                const responseDiv = document.getElementById('formResponse');
+                                                responseDiv.textContent = "Oops! Something went wrong.";
+                                                responseDiv.style.color = "red"; // Style response
+                                                console.error("FAILED...", error); // Log the error
+                                            }
+                                        );
+                                });
+                            }
+    
+                            // Initialize resume tab functionality, if applicable
+                            initResumeTabs();
+                        })
+                        .catch(error => console.error('Error loading content:', error)); // Handle fetch errors
+                });
+            });
+        });
+    
+        // Function to attach events to tab buttons, if present
+        function initResumeTabs() {
+            const tabButtons = document.querySelectorAll(".tab-btn"); // Select all tab buttons
+            const tabContents = document.querySelectorAll(".tab-content"); // Select all tab contents
+            if (tabButtons.length > 0) {
+                tabButtons.forEach(button => {
+                    button.addEventListener("click", () => {
+                        const target = button.getAttribute("data-tab"); // Get the target tab ID
+                        // Remove active state from all buttons and contents
+                        tabButtons.forEach(btn => btn.classList.remove("active"));
+                        tabContents.forEach(content => content.classList.remove("active"));
+                        // Activate the clicked button and its associated content
+                        button.classList.add("active");
+                        document.getElementById(target).classList.add("active");
+                    });
+                });
+            }
+        }
+    
+        // Function to reload the page
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
     
 </body>
+
 </html>
