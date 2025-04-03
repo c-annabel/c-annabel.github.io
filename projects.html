@@ -1,18 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-</head>
-<body>
-    <h3><strong>My Projects</strong></h3>
-    <ol>
-        <li><a href="www.didadee.fr">diDadee (Shopify)</a></li>
-        <li>My first JAVA</li>
+<!-- 
+    Name: Annabel Cheng
+    File Name: projects.html
+    Date Created: March 01, 2025
+    Description: 4 projects information built by the content creator.
+-->
 
-    </ol>
-    
-</body>
-</html>
+<main class="projects-page">
+  <!-- Container for all project elements -->
+  <div class="projects-container">
+      <!-- Project 1: Portfolio Webpage -->
+      <div class="project active">
+          <h2>Portfolio Webpage</h2>
+          <img src="images/Project01.png" alt="Portfolio Webpage">
+          <p class="description">
+              A personal portfolio webpage showcasing my skills, projects, and experiences. This organized 
+              and visually engaging layout highlights my expertise, achievements, and creative work.
+          </p><br>
+          <p class="date"><em>Completed: March 2025</em></p>
+          <p class="technologies">Technologies Used: HTML, CSS, JavaScript.</p><br>
+      </div>
+
+      <!-- Project 2: LinkedIn Inspection Report -->
+      <div class="project">
+          <h2>Inspection Report for LinkedIn Profiles of College Staff</h2>
+          <img src="images/Project02.png" alt="Inspection Report for LinkedIn Profiles of College Staff">
+          <p class="description">
+              Conducted an inspection report evaluating the LinkedIn presence of college employees to assess 
+              whether profiles are well-presented and effectively promote a positive image for the college. 
+              Provided actionable recommendations for improvement.
+          </p><br>
+          <p class="date"><em>Completed: December 2024</em></p>
+          <p class="technologies">Technologies Used: MS Office Suites, Adobe Suites.</p><br>
+      </div>
+
+      <!-- Project 3: Battery Quality Tracking System -->
+      <div class="project">
+          <h2>Battery Quality Tracking System</h2>
+          <img src="images/Project03.png" alt="Battery Quality Tracking System">
+          <p class="description">
+              Designed and developed a Java program to track the quality of manufactured coin cell batteries. 
+              Used UML diagrams and flowcharts to plan system architecture and logic, ensuring accurate quality 
+              analysis and reporting. Implemented and tested features for data input, analysis, and optimization.
+          </p><br>
+          <p class="date"><em>Completed: November 2024</em></p>
+          <p class="technologies">Technologies Used: Java</p><br>
+      </div>
+
+      <!-- Project 4: Weight & Height Converter -->
+      <div class="project">
+          <h2>Weight & Height Converter</h2>
+          <img src="images/Project04.png" alt="Weight & Height Converter">
+          <p class="description">
+              A Python project that converts weight and height between different units, such as kilograms 
+              to pounds, meters to feet, and vice versa.
+          </p><br>
+          <p class="date"><em>Completed: October 2022</em></p>
+          <p class="technologies">Technologies Used: Python</p><br>
+      </div>
+
+      <!-- Navigation Buttons for Project Browsing -->
+      <div class="navigation-container">
+          <button id="prevBtn" class="nav-btn">Previous</button>
+          <button id="nextBtn" class="nav-btn">Next</button>
+      </div>
+
+      <!-- Container for End Message -->
+      <div id="endMessage" class="end-message"></div>
+      <!-- Inspirational Quote at the Bottom -->
+      <div class="star-wars-quote">May the Force be with you!</div>
+  </div>
+</main>
+
